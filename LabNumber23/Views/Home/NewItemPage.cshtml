@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "NewItemPage";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model LabNumber23.Models.Item
+
+<h2>NewItemPage</h2>
+
+
+<form action="/Home/AddNewCoffee" method="post">
+    Name: <input type="text" name="name" /><br />
+    Description: <input type="text" name="description" /><br />
+    Quantity: <input type="text" name="quantity" /><br />
+    Price: <input type="text" name="price" /><br />
+    <input type="submit" value="Save Changes" />
+</form>
